@@ -1,0 +1,174 @@
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    font-family: Roboto;
+}
+h2 {
+	font-size: 40px;
+	text-align: center;
+}
+
+h5 {
+	text-align: center;
+}
+
+h6 {
+	text-align: center;
+	color: #d42e12;
+}
+
+p {
+	font-size: 15px
+}
+
+.container {
+	display: flex;
+	width: 80%; height: 20%;
+    margin-left: auto; margin-right: auto;
+    text-align: center;
+}
+
+.container p{
+	color: #58595b;
+}
+
+.logoArea {
+	background-color: black;
+
+}
+.logo {
+	margin-left: 50px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+
+.top{
+	display: block; height: 35vh;
+	padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+.contLeft{
+	flex: 30%;
+	border: 2px solid black;
+	margin-top: 10px;
+	padding: 10px;
+	border-radius: 20px;
+	background-color: #f7d117;
+}
+
+.contRight{
+	flex: 70%;
+	border: 2px solid black;
+	padding: 10px;
+	margin-top: 10px;
+	margin-left: 20px;
+	border-radius: 20px;
+	background-color: #f7d117;
+}
+
+.intro {
+	text-align: center;
+}
+
+button{
+	/*block - for displaying the object
+	flex - displaying the object (can customize)
+	none - no display at all*/
+	display: block; /*first step kasi display*/
+	width: 45%; height: 35px; /*second step kasi size*/
+	padding-left: 10px; /*padding size dalam*/
+	/*margin size luar*/
+	border-radius: 20px;
+	border: 1px solid #f7d117;
+}
+
+button:hover{
+	cursor: pointer;
+	background-color: #00824a;
+	color: white;
+}
+
+img{
+	max-width: 150px;
+}
+
+#help-text {
+	color: blue;
+}
+
+body {
+	font-family: 'Noto sans', sans-serif;
+	background-image: url('images/bg1.png');
+	background-size: 100% 100%;
+	margin: 0;
+}
+h1, h3, title {
+	font-family: 'Roboto Mono', monospace;
+}
+p {
+	font-family: 'Roboyo Mono', monospace;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	background-color: black;
+	margin: 20px 0;
+
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+/*below is for questionaire*/
+
+.questions{
+	display: block;
+	width: 50%; height: 15%;
+	margin-top: 20px;
+	margin-right: auto; margin-left: auto;
+	padding-left: 5%;
+	border: 1px dotted black;
+	border-radius: 20px;
+	box-shadow: 3px 5px black;
+	background-color: #f7d117;
+}
+
+.questions:last-child {
+	margin-bottom: 40px;
+}
+
+.forBtn{
+	display: block;
+	width: 30%; height: 40px;
+	border-radius: 20px;
+	border: 1px solid red;
+	background-color: #d42e12;
+	padding-left: 10px;
+	color: white;
+	font-weight: bolder;
+	margin-bottom: 20px;
+}
+
+@media (min-width: 700px) {
+	.grid {
+		grid-template-columns: 50% 50%;
+	}
+}
+@media (min-width: 1000px) {
+	.grid {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
